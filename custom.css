@@ -1,0 +1,102 @@
+/*
+ * Custom Doxygen theme tweaks for the VR Model Viewer documentation.
+ * The styling keeps the generated site close to the application's dark UI.
+ */
+
+:root {
+  --primary-color: #38bdf8;
+  --primary-dark-color: #0ea5e9;
+  --primary-light-color: #7dd3fc;
+  --page-background-color: #0f172a;
+  --page-foreground-color: #e5e7eb;
+  --separator-color: #334155;
+  --side-nav-background: #111827;
+  --fragment-background: #020617;
+  --fragment-foreground: #dbeafe;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html,
+body,
+#doc-content,
+#container,
+.contents,
+.textblock {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.contents p,
+.contents li,
+.contents td,
+.contents dd,
+.contents dt,
+.textblock p,
+.textblock li {
+  color: #e5e7eb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.doxsection {
+  color: #f8fafc;
+}
+
+#top,
+#nav-tree,
+#side-nav,
+.ui-resizable-e {
+  background: #111827;
+}
+
+#titlearea {
+  border-bottom: 1px solid #334155;
+}
+
+.title {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+a,
+a:visited {
+  color: #7dd3fc;
+}
+
+a:hover {
+  color: #bae6fd;
+}
+
+div.header,
+div.contents,
+.contents {
+  background: #0f172a;
+}
+
+div.fragment {
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 8px;
+}
+
+table.memberdecls,
+.memitem,
+.memproto,
+.memdoc {
+  background: #111827;
+  border-color: #334155;
+}
+
+.memtitle,
+.memproto {
+  color: #f8fafc;
+}
