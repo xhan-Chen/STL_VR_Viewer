@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  deploy-ws6-documentation:
+  deploy-documentation:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,12 +20,12 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y doxygen
 
       - name: Run Doxygen
-        working-directory: ${{ github.workspace }}/team/WS6
+        working-directory: ${{ github.workspace }}/src
         run: doxygen Doxyfile
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
-          folder: ${{ github.workspace }}/team/WS6/html
+          folder: ${{ github.workspace }}/src/html
           clean: true
