@@ -17,7 +17,6 @@ Members:
 
 The software allows engineers and designers to easily import complex STL assembly models, perform precise spatial transformations and material adjustments on the desktop, and seamlessly switch to a VR environment with a single click to directly interact with model parts in a 3D physical space.
 
----
 
 ## Core Features
 
