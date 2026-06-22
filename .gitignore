@@ -1,0 +1,38 @@
+# 忽略所有文件
+*
+
+# 允许文件夹结构
+!*/
+
+# 只允许 cpp 和 h 文件
+!*.cpp
+!*.h
+
+# 如果需要保留 CMakeLists.txt (通常建议保留)
+!**/CMakeLists.txt
+
+# 明确排除所有 build 文件夹和压缩包
+.vs/
+.qtcreator/
+build/
+out/
+icons/
+*.ui
+*.qrc
+
+!*.cxx
+
+# 4. 允许 vrbindings 文件夹及其内容
+!**/vrbindings/
+!**/vrbindings/*
+
+!**/CMakeLists.txt
+!README.md
+
+# Allow Doxygen documentation source and GitHub Actions workflow files.
+!**/Doxyfile
+!**/doxygen/
+!**/doxygen/**
+!**/.github/
+!**/.github/**
+!**/.gitignore

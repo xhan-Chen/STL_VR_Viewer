@@ -1,0 +1,19 @@
+# Build outputs
+build/
+out/
+.vs/
+.qtcreator/
+
+# Doxygen generated output; GitHub Actions publishes this to gh-pages.
+html/
+docs/
+docs/generated/
+
+# Qt Creator and local editor state
+*.user
+*.autosave
+
+# Temporary logs
+*.log
+
+build_vtk/

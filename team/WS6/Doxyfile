@@ -1,0 +1,82 @@
+# Doxyfile for the VR Model Viewer project.
+# Run locally with: doxygen Doxyfile
+
+PROJECT_NAME           = "VR Model Viewer"
+PROJECT_BRIEF          = "Qt, VTK, and OpenVR STL assembly viewer"
+PROJECT_NUMBER         = 1.0.0
+OUTPUT_DIRECTORY       = .
+CREATE_SUBDIRS         = NO
+
+INPUT                  = doxygen/overview.md \
+                         main.cpp \
+                         mainwindow.h \
+                         mainwindow.cpp \
+                         ModelPart.h \
+                         ModelPart.cpp \
+                         ModelPartList.h \
+                         ModelPartList.cpp \
+                         dialog.h \
+                         dialog.cpp \
+                         VRRenderThread.h \
+                         VRRenderThread.cpp
+
+USE_MDFILE_AS_MAINPAGE = doxygen/overview.md
+FILE_PATTERNS          = *.h *.cpp *.md
+RECURSIVE              = NO
+EXCLUDE                = build .qtcreator .vs out
+EXCLUDE_PATTERNS       = *_autogen/* moc_* ui_*
+
+OPTIMIZE_OUTPUT_FOR_C  = NO
+EXTENSION_MAPPING      = qrc=XML ui=XML
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+MULTILINE_CPP_IS_BRIEF = NO
+
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = YES
+EXTRACT_PRIV_VIRTUAL   = YES
+EXTRACT_PACKAGE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_COLORSTYLE        = DARK
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = NO
+FULL_SIDEBAR           = NO
+SEARCHENGINE           = YES
+HTML_EXTRA_STYLESHEET  = doxygen/custom.css
+
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+GENERATE_MAN           = NO
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+REFERENCES_LINK_SOURCE = YES
+
+HAVE_DOT               = NO
+DOT_IMAGE_FORMAT       = svg
+COLLABORATION_GRAPH    = NO
+UML_LOOK               = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+DOT_GRAPH_MAX_NODES    = 80
+DOT_NUM_THREADS        = 1
+
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+WARN_AS_ERROR          = NO
+
+ALIASES               += "threadsafe=\par Thread safety:\n"
+ALIASES               += "vrnote=\par VR note:\n"
